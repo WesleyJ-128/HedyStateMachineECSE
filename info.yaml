@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
+  wokwi_id:     426965769300169729       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Hedy Statemachine"      # Project title
+  author:       "WesleyJ-128"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "Implements a statmachine created for an FRC robot"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -15,21 +15,21 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "S"
+  ui[1]: "ST"
   ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
+  ui[3]: "ColorPresent"
+  ui[4]: "ColorCorrect"
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
+  uo[0]: "Idle"
+  uo[1]: "Indexing"
+  uo[2]: "Shooting"
+  uo[3]: "Eject_A"
+  uo[4]: "Eject_B"
   uo[5]: ""
   uo[6]: ""
   uo[7]: ""
